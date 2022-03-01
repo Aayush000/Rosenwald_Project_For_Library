@@ -1,0 +1,129 @@
+/* --------------------  */
+/* Entire Page or container  */
+/* --------------------  */
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* -------------------- 
+Top section 
+--------------------  */
+.top {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Logo section  */
+.logo {
+  align-self: flex-end;
+}
+
+.logo > img {
+  height: 50px;
+}
+
+/* Text section  */
+.text {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* SearchAbout section  */
+.searchAbout {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Search section  */
+.search {
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 45px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+
+.search > input {
+  margin-bottom: 10px;
+}
+
+.search > button {
+  color: red;
+  background-color: black;
+  width: 80px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* About section  */
+.about {
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid red;
+  border-radius: 40px;
+  width: 50%;
+}
+
+/* -------------------- 
+Middle Section 
+--------------------  */
+.middle {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Featured Section  */
+.featured_schools {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* featured_school_with_name section  */
+.featured_school_with_name {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.image > img {
+  height: 8em;
+}
+
+/* Homepage showcase schools  */
+.showcase_schools {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* showcase title  */
+.showcase_title {
+  display: flex;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+/* Showcase school small collections  */
+.showcase_small_collections {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.row1,
+.row2 {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+/* -------------------- 
+Bottom Section 
+--------------------  */
+.bottom {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
