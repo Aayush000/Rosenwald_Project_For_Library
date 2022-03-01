@@ -113,7 +113,8 @@ Middle Section
 }
 
 .row1,
-.row2 {
+.row2,
+.row3 {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
