@@ -29,6 +29,7 @@ Top section
 
 .logo > img {
   height: 70px;
+  cursor: pointer;
 }
 
 /* Text section  */
