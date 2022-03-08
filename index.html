@@ -8,8 +8,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="style.css" />
-    <title>Rosenwald Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="home.css" />
+    <title>Rosenwald School | Home Page</title>
   </head>
 
   <body>
@@ -24,42 +28,55 @@
 
         <!-- Top -- text  -->
         <div class="text">
-          <div style="margin-bottom: 5px; font-weight: bold">ROSENWALD</div>
-          <div>Digital Collections</div>
+          <div id="first_text">ROSENWALD</div>
+          <div id="second_text">Digital Collections</div>
         </div>
 
         <!-- Top -- search-- About  -->
         <div class="searchAbout">
           <!-- searchAbout -- search  -->
           <div class="search">
-            <input type="text" placeholder="Search Keyword(s)" size="50" />
-            <div class="button"><button>Advanced Search</button></div>
+            <div class="search_logo">
+              <input type="text" placeholder="Search Keyword(s)" size="50" />
+              <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+            </div>
+
+            <div class="advanced"><button>Advanced Search</button></div>
           </div>
 
           <!-- searchAbout -- about  -->
-          <div class="about">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quis
-            libero nostrum dolore ipsum. Optio vitae quia nulla quisquam.
-            Accusamus, unde eligendi illo asperiores deleniti voluptate odio
-            atque consectetur eum nisi fugiat in! Omnis dolor quae facere totam
-            atque debitis ab, dignissimos eveniet sunt, quasi culpa. Impedit
-            quia placeat maiores veniam vel quam sequi earum similique! Minus
-            laborum placeat inventore aut consequuntur, est, ullam itaque nobis
-            reprehenderit id magni asperiores nisi vero ad? Sunt, autem nam sed
-            optio vero illum debitis quae doloremque veritatis tenetur et sequi
-            unde! Officia, voluptatibus.
+          <div class="about" id="about_page" onclick="newPage()">
+            <center><strong>What am I searching?</strong></center>
+
+            <br />
+
+            <p>
+              Rosenwald Digital Collections contains collections of schools,
+              hospitals. Rosenwald schools refer to a group of educational
+              institutions established in the South for African Americans in the
+              first half of twentieth century. The schools were named for Julius
+              Rosenwald, president and later chairman of Sears Roebuck & Co. and
+              creator of the philanthropic Rosenwald Fund, which provided
+              matching funds for the schools.
+            </p>
+
+            <br />
+
+            <p style="color: red">
+              <strong>Click to learn more about Rosenwald Schools!</strong>
+            </p>
           </div>
         </div>
       </div>
-      <p>---------------------------------------------</p>
-      <p>---------------------------------------------</p>
 
       <!-- Middle Section  -->
       <div class="middle">
-        <!-- featured schools  -->
+        <!-- Middle - featured schools  -->
         <div class="featured">
           <!-- Featured School title  -->
-          <div class="featured_title">Featured schools</div>
+          <div class="featured_title">
+            <strong>Feature Schools</strong>
+          </div>
 
           <!-- Featured schools list in a row  -->
           <div class="featured_schools">
@@ -94,9 +111,8 @@
             </div>
           </div>
         </div>
-        <p>---------------------------------------------</p>
 
-        <!-- homepage showcase schools  -->
+        <!-- Middle - homepage showcase schools  -->
         <div class="showcase_schools">
           <!-- Showcase title  -->
           <div class="showcase_title">
@@ -207,8 +223,6 @@
           </div>
         </div>
       </div>
-      <p>---------------------------------------------</p>
-      <p>---------------------------------------------</p>
 
       <!-- Bottom Section  -->
       <div class="bottom">
@@ -251,5 +265,7 @@
         </div>
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
