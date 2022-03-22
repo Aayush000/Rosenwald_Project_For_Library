@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Handlee&family=Source+Sans+Pro:wght@900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap");
 * {
   margin: 0;
+  font-family: "Montserrat", sans-serif;
 }
 
 /* --------------------  */
@@ -175,7 +176,7 @@ Middle Section
 /* Featured Section  */
 .featured_schools {
   display: flex;
-  flex-flow: row wrap;
+  flex-direction: row;
   justify-content: space-between;
 }
 
@@ -184,6 +185,35 @@ Middle Section
   display: flex;
   flex-flow: column wrap;
   border: 3px solid blue;
+  margin-left: 10px;
+}
+
+/* Featured school image  */
+.fe_image {
+  align-items: center;
+}
+
+.fe_image > img {
+  height: 20em;
+}
+
+/* featured school name  */
+.fe_name {
+  margin-top: -5px;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: #ffc107;
+  border-top: 3px solid blue;
+}
+
+/* featured school description  */
+.featured_description {
+  margin: 0px 20px;
+  padding: 40px;
+  font-weight: bold;
+  background-color: #ffc107;
 }
 
 .image {
@@ -191,7 +221,7 @@ Middle Section
 }
 
 .image > img {
-  height: 16em;
+  height: 14em;
   cursor: pointer;
   display: block;
   transition: transform 1.5s;
@@ -209,6 +239,31 @@ Middle Section
   text-align: center;
   font-size: large;
   font-weight: bold;
+}
+
+.school-name,
+.address {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.school-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+.address {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about-school {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 45px;
+  padding: 3px;
 }
 
 /* Homepage showcase schools  */
@@ -255,9 +310,10 @@ Middle Section
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
+  margin-top: 10px;
   margin-bottom: 10px;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
 }
 
 /* -------------------- 
