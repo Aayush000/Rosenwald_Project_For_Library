@@ -44,14 +44,14 @@ Top section
 #first_text {
   font-family: "Source Sans Pro", sans-serif;
   color: white;
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: -5px;
 }
 
 #second_text {
-  font-family: "Handlee", cursive;
+  font-family: "Montserrat", sans-serif;
   color: white;
-  font-size: 50px;
+  font-size: 40px;
 }
 
 /* SearchAbout section  */
