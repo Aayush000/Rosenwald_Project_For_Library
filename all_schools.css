@@ -1,0 +1,31 @@
+.images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 20px;
+    gap: 1em;
+}
+
+.imageText {
+    display: flex;
+    flex-direction: column;
+}
+
+.image > img {
+    max-width: 100%;
+}
+
+.text {
+    display: flex;
+    justify-content: center;
+    background-color: grey; 
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+    line-height: 2;
+}
+
+@media (max-width: 900px) {
+    .images {
+        grid-template-columns: 1fr;
+    }
+}

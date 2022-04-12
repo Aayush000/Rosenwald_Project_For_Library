@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+}
+
+.container {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Header section  */
+.nav-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #ffc107;
+  padding: 15px;
+}
+
+a > img {
+  height: 60px;
+}
+
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 12px;
+}
+
+.search-logo > i {
+  margin-left: 10px;
+  color: grey;
+  cursor: pointer;
+}
+
+.search-logo > i:hover {
+  color: #ffc107;
+}
+
+.input-field > input {
+  margin-top: 10px;
+  margin-left: 7px;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* Middle section  */
+.school {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.school-image {
+  align-self: center;
+  margin: 50px 50px;
+}
+
+.school-image > img {
+  height: 500px;
+}
+
+.school-details {
+  align-self: center;
+  background-color: #ffc107;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Footer section  */
+.bottom {
+  display: flex;
+  margin-top: 20px;
+  background-color: #ffc107;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo_address,
+.about_stuffs,
+.items,
+.admin,
+.contact {
+  align-self: center;
+}
+
+.address {
+  font-weight: 400;
+}
