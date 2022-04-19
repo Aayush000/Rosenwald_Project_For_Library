@@ -5,3 +5,7 @@ function newPage() {
 function fiskPage() {
   window.open("https://www.fisk.edu/");
 }
+
+function all_schools() {
+  window.open("all_schools.html");
+}
