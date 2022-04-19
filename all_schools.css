@@ -1,6 +1,66 @@
+* {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Header section  */
+.nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffc107;
+    padding: 15px;
+}
+
+.logo > a > img {
+    width: 20%;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 12px;
+  }
+
+  .search-logo > i {
+    margin-top: 0.4em;
+    color: grey;
+    cursor: pointer;
+  }
+
+  .search-logo > i:hover {
+    color: #ffc107;
+  }
+
+
+  .input-field > input[type=text] {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 1em;
+    margin: 1em;
+  }
+
+
+/* Text field  */
+.text-field {
+    background-color: grey;
+    text-align: center;
+    padding: 1em;
+    margin: 1em;
+    color: whitesmoke;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+
+/* Images section  */
 .images {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     margin: 20px;
     gap: 1em;
 }
@@ -17,13 +77,35 @@
 .text {
     display: flex;
     justify-content: center;
-    background-color: grey; 
-    color: white;
+    background-color: #ffc107; 
     font-weight: bolder;
     font-size: large;
     line-height: 2;
 }
 
+/* -------------------- 
+Bottom Section 
+--------------------  */
+.bottom {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1em;
+    background-color: #ffc107;
+    padding: 25px;
+    margin: 0px;
+    font-size: 1.3em;
+}
+
+.logo_address {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.logoo > a > img {
+    max-width: 100%;
+}
+
+/* Mobile  */
 @media (max-width: 900px) {
     .images {
         grid-template-columns: 1fr;
