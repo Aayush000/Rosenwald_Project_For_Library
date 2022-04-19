@@ -88,7 +88,7 @@ Bottom Section
 --------------------  */
 .bottom {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: 1fr 1.2fr repeat(3, 1fr);
     gap: 1em;
     background-color: #ffc107;
     padding: 25px;
@@ -96,9 +96,10 @@ Bottom Section
     font-size: 1.3em;
 }
 
-.logo_address {
+.logo_address, .about_stuffs, .items, .admin, .contact {
     display: flex;
     flex-flow: column wrap;
+    justify-content: center;
 }
 
 .logoo > a > img {
