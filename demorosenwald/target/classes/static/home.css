@@ -1,0 +1,401 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Source+Sans+Pro:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap");
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 600; */
+}
+
+/* --------------------  */
+/* Entire Page or container  */
+/* --------------------  */
+.container {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: grey;
+}
+
+/* -------------------- 
+Top section 
+--------------------  */
+.top {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* Logo section  */
+.logo {
+  align-self: flex-end;
+  margin: 10px 10px 10px 0px;
+}
+
+.logo > img {
+  height: 70px;
+  cursor: pointer;
+}
+
+/* Text section  */
+.text {
+  display: flex;
+  flex-flow: column wrap;
+  margin-left: 10px;
+}
+
+#first_text {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 60px;
+  margin-bottom: -5px;
+}
+
+#second_text {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+/* SearchAbout section  */
+.searchAbout {
+  display: flex;
+  /* justify-content: space-between; */
+  margin-top: 15px;
+}
+
+/* Search section  */
+.search {
+  flex: 0.3;
+  align-self: flex-start;
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.search_logo {
+  margin: 10px;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: rgba(6, 25, 42, 0.8);
+  /* opacity: 0.2; */
+}
+
+.search_logo > input {
+  outline: none;
+  border: none;
+  background: none;
+}
+
+/* For firefox  */
+::placeholder {
+  color: white;
+}
+
+/* For Internet Explorer  */
+:-ms-input-placeholder {
+  color: white;
+}
+
+/* For Microsoft Edge  */
+::-ms-input-placeholder {
+  color: white;
+}
+
+/* For the text that user writes in the input field*/
+input,
+select,
+textarea {
+  color: white;
+  font-size: 20px;
+}
+
+/* For the search icon  */
+.search_logo > i {
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.search_logo > i:hover {
+  color: #ffc107;
+}
+
+/* For the advanced button  */
+
+.advanced {
+  margin: 0px 10px;
+}
+
+button {
+  padding: 10px;
+  border: 4px solid #ffc107;
+  border-radius: 10px;
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ffc107;
+}
+
+/* About section  */
+.about {
+  box-sizing: border-box;
+  font-size: 20px;
+  border-radius: 5px;
+  padding: 35px;
+  margin-left: 20px;
+  margin-right: 10px;
+  background-color: #ffc107;
+  opacity: 0.5;
+  color: #2a55e0;
+}
+
+.about:hover {
+  background-color: #ffc107;
+  opacity: 1;
+  color: #2a55e0;
+  cursor: pointer;
+}
+
+/* -------------------- 
+Middle Section 
+--------------------  */
+.middle {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.featured {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.featured_title {
+  color: #ffc107;
+  font-size: 20px;
+  margin-top: 20px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: rgba(6, 25, 42, 0.8);
+}
+
+/* Featured Section  */
+.featured-schools {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.featured-img-des {
+  display: flex;
+  flex-direction: column;
+}
+
+.featured-image > img {
+  max-width: 100%;
+}
+
+.featured-school-name {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2em;
+  background-color: #ffc107;
+}
+
+.featured-description {
+  display: flex;
+  flex-flow: column wrap;
+  background-color: #ffc107;
+  padding: 1em;
+}
+
+.feature-school-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+.featured-school-address {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.featured-about-school {
+  margin-top: 1em;
+  font-size: 1.5em;
+  text-align: center;
+
+}
+
+.featured_schools {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* featured_school_with_name section  */
+.featured_school_with_name {
+  display: flex;
+  flex-flow: column wrap;
+  border: 3px solid blue;
+  margin-left: 10px;
+}
+
+/* Featured school image  */
+.fe_image {
+  align-items: center;
+}
+
+.fe_image > img {
+  height: 20em;
+}
+
+/* featured school name  */
+.fe_name {
+  margin-top: -5px;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  background-color: #ffc107;
+  border-top: 3px solid blue;
+}
+
+/* featured school description  */
+
+.featured_description {
+  margin: 0px 20px;
+  padding: 40px;
+  font-weight: bold;
+  background-color: #ffc107;
+}
+
+.image {
+  overflow: hidden;
+}
+
+.image > img {
+  height: 14em;
+  cursor: pointer;
+  display: block;
+  transition: transform 1.5s;
+}
+
+.image:hover > img {
+  transform: scale(1.2);
+  transform-origin: 50% 50%;
+}
+
+.name {
+  border-top: 3px solid blue;
+  background-color: #ffc107;
+  padding: 10px;
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+}
+
+.school-name,
+.school-address {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.school-name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 40px;
+}
+
+.address {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.about-school {
+  margin-top: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  line-height: 45px;
+  padding: 3px;
+}
+
+/* Homepage showcase schools  */
+.showcase_schools {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+/* showcase title  */
+.showcase_title {
+  display: flex;
+  background-color: rgba(6, 25, 42, 0.8);
+  color: #ffc107;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.title {
+  margin-right: 10px;
+}
+
+.see_more {
+  font-size: small;
+  margin-top: 10px;
+}
+
+.see_more:hover {
+  color: white;
+  cursor: pointer;
+}
+
+/* Showcase school small collections  */
+.showcase_small_collection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.school-image > img {
+  max-width: 100%;
+}
+
+.school-name {
+  background-color: #ffc107;
+  font-size: 2em;
+  font-weight: bol;
+}
+
+/* --------------------
+Bottom Section
+--------------------  */
+.bottom {
+  display: flex;
+  margin-top: 20px;
+  background-color: #ffc107;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-bottom: 10px;
+}
+
+.logo_address,
+.about_stuffs,
+.items,
+.admin,
+.contact {
+  align-self: center;
+}
+
+.address {
+  font-weight: 400;
+}

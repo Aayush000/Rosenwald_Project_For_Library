@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="/home.css" />
+  <title>Rosenwald School | Home Page</title>
+</head>
+
+<body>
+<!-- Entire page or container  -->
+<div class="container">
+  <!-- Top Section  -->
+  <div class="top">
+    <!-- Top -- logo  -->
+    <div class="logo">
+      <img src="/images/logo.jpg" alt="fisk logo" onclick="fiskPage()" />
+    </div>
+
+    <!-- Top -- text  -->
+    <div class="text">
+      <div id="first_text">ROSENWALD</div>
+      <div id="second_text">Digital Collections</div>
+    </div>
+
+    <!-- Top -- search-- About  -->
+    <div class="searchAbout">
+      <!-- searchAbout -- search  -->
+      <div class="search">
+        <div class="search_logo">
+          <input type="text" placeholder="Search Keyword(s)" size="50" />
+          <i class="fa fa-search fa-2x" aria-hidden="true"></i>
+        </div>
+
+        <div class="advanced"><button>Advanced Search</button></div>
+      </div>
+
+      <!-- searchAbout -- about  -->
+      <div class="about" id="about_page" onclick="newPage()">
+        <center><strong>What am I searching?</strong></center>
+
+        <br />
+
+        <p>
+          Julius Rosenwald is “the greatest donor you never heard of,”
+          remarks Peter Ascoli in his biography of this unextraordinary,
+          extra-ordinary man, who also happens to be his grandfather (cited
+          Deutsch ix). Born in 1862, Rosenwald grew up in Springfield,
+          Illinois, across the street from Abraham Lincoln’s home...
+        </p>
+
+        <br />
+
+        <p>
+          <strong>Click to learn more about Rosenwald Schools!</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Middle Section  -->
+  <div class="middle">
+    <!-- Middle - featured schools  -->
+    <div class="featured">
+      <!-- Featured School title  -->
+      <div class="featured_title">
+        <strong>Featured School</strong>
+      </div>
+
+      <!-- Featured schools list in a row  -->
+      <div class="featured_schools">
+        <!-- Featured school 1 -->
+        <div class="featured_school_with_name" style="flex: 0.3">
+          <!-- image  -->
+          <div class="fe_image">
+            <img src="images/school.jpg" alt="" />
+          </div>
+          <!-- name of school  -->
+          <div class="fe_name">Chatman School</div>
+        </div>
+
+        <!-- Featured School Description  -->
+        <div class="featured_description" style="flex: 0.7">
+          <div class="school-name">CHATMAN SCHOOL</div>
+          <div class="school-address">Claiborne Parish, Louisiana</div>
+          <div class="about-school">
+            The Shiloh (Chatman) school was built on the 750 acre farm of
+            Bill Chatman. In addition to providing the land, he also donated
+            around $2,000 to the construciton of the three-teacher school.
+            In appreciation, the school was named after him.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle - homepage showcase schools  -->
+    <div class="showcase_schools">
+      <!-- Showcase title  -->
+      <div class="showcase_title">
+        <div class="title">SCHOOLS</div>
+        <div class="see_more">SEE MORE</div>
+      </div>
+
+      <div class="showcase_small_collection">
+
+        <div th:each="school: ${schools}">
+
+        <div class="image-des">
+          <div class="school-image">
+            <img src="images/school.jpg" alt="school" />
+          </div>
+          <div class="school-name"><p th:text="${school.schoolNames}"/></div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Bottom Section  -->
+  <div class="bottom">
+    <!-- logo and address  -->
+    <div class="logo_address">
+      <!-- Logo section  -->
+      <div class="logo">
+        <img src="/images/logo.jpg" alt="" onclick="fiskPage()" />
+      </div>
+      <!-- Address section  -->
+      <div class="address">
+        <p>1000 17th Avenue N.</p>
+        <p>Nashville, TN 37208</p>
+      </div>
+    </div>
+
+    <!-- about section  -->
+    <div class="about_stuffs">
+      <p>About Rosenwald Database</p>
+      <p>About Fisk University</p>
+      <p>About the Developoer Team</p>
+    </div>
+
+    <!-- Other items  -->
+    <div class="items">
+      <p>Library Catalogue</p>
+      <p>Special Collections</p>
+      <p>Research Guides</p>
+    </div>
+
+    <!-- admin  -->
+    <div class="admin">
+      <p>Admin, Login</p>
+    </div>
+
+    <!-- Contact  -->
+    <div class="contact">
+      <p>Contact Us</p>
+      <p>Feedback</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
