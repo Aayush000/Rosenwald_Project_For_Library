@@ -1,5 +1,10 @@
+
+function all_schools() {
+  window.open("all_schools");
+}
+
 function newPage() {
-  window.open("about.html");
+  window.open("about");
 }
 
 function fiskPage() {
