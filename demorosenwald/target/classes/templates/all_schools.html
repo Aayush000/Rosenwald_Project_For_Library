@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -39,81 +39,95 @@
 
     <!-- Images Section  -->
     <div class="images">
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
-        </div>
-        <div class="text">Rosenwald School1</div>
-      </div>
+      <div th:each="school: ${schools}">
 
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
+        <div class="imageText">
+          <div class="image">
+            <img src="images/school.jpg" alt="school image" />
+          </div>
+          <div class="text"><p th:text="${school.schoolNames}"/></div>
         </div>
-        <div class="text">Rosenwald School2</div>
-      </div>
 
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
-        </div>
-        <div class="text">Rosenwald School3</div>
-      </div>
-
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
-        </div>
-        <div class="text">Rosenwald School4</div>
-      </div>
-
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
-        </div>
-        <div class="text">Rosenwald School5</div>
-      </div>
-
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
-        </div>
-        <div class="text">Rosenwald School5</div>
-      </div>
-
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
-        </div>
-        <div class="text">Rosenwald School5</div>
-      </div>
-
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
-        </div>
-        <div class="text">Rosenwald School5</div>
-      </div>
-
-      <div class="imageText">
-        <div class="image">
-          <img src="images/school.jpg" alt="school image" />
-        </div>
-        <div class="text">Rosenwald School6</div>
       </div>
     </div>
 
-    <!-- Pagination  -->
-    <div class="pagination">
-      <a href="#">&laquo;</a>
-      <a href="#">1</a>
-      <a class="active" href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#">6</a>
-      <a href="#">&raquo;</a>
-    </div>
+
+
+    <div th:if="${totalPages > 0}" class="pagination">
+
+<!--      <a href="#">&laquo;</a>-->
+      <span th:each="pageNumber: ${#numbers.sequence(1, totalPages)}">
+      <a th:href="@{/all_schools(page=${pageNumber})}"
+         th:text="${pageNumber}"
+         th:class="${pageNumber== currentPage} ? active"><a/>
+
+    </span>
+      </div>
+
+
+
+
+<!-- Pagination-->
+<!--    <div class="pagination">-->
+<!--      <div class = "col-sm-2">-->
+<!--        Total Rows: [[${pageSize}]]-->
+<!--      </div>-->
+<!--      <p th:each="number: ${#numbers.sequence(0,2)}">-->
+
+<!--        <a href="#">&laquo;</a>-->
+<!--      <a class="active" th:href="@{'/all_schools/' + ${number}}">[[${number}]]</a>-->
+
+<!--      <a href="#">2</a>-->
+<!--      <a href="#">3</a>-->
+<!--      <a href="#">4</a>-->
+<!--      <a href="#">5</a>-->
+<!--      <a href="#">6</a>-->
+<!--      <a href="#">&raquo;</a>-->
+<!--      </p>-->
+<!--    </div>-->
+
+
+<!--  <div class="pagination">-->
+<!--    <div th:if = "${totalPages > 1}">-->
+<!--      <div class = "row col-sm-10">-->
+<!--        <div class = "col-sm-2">-->
+<!--          Total Rows: [[${totalItems}]]-->
+<!--        </div>-->
+<!--        <div class = "col-sm-1">-->
+
+<!--          <p th:each="number: ${#numbers.sequence(0,2)}">-->
+
+<!--            <span th:text="${number}"></span>-->
+<!--          </p>-->
+<!--          <p th:each="number: ${#numbers.sequence(0,4,2)}">-->
+<!--            &lt;!&ndash;/*@thymesVar id="number" type="templates"*/&ndash;&gt;-->
+<!--            <span th:text="${number}"></span>-->
+<!--          </p>-->
+
+<!--                    &lt;!&ndash;/*@thymesVar id="number" type="templates"*/&ndash;&gt;-->
+<!--					<span th:each="index: ${#numbers.sequence(1, totalPages)}">-->
+<!--                      &lt;!&ndash;/*@thymesVar id="number" type="templates"*/&ndash;&gt;-->
+<!--						<a th:if="${currentPage != index}" th:href="@{'/all_schools/' + ${i}}">[[${i}]]</a>-->
+<!--						<span th:unless=M${currentPage != i}">[[${i}]]</span>  &nbsp; &nbsp;-->
+<!--					</span>-->
+<!--        </div>-->
+<!--        <div class = "col-sm-1">-->
+<!--          <a th:if="${currentPage < totalPages}" th:href="@{'/all_schools/' + ${currentPage + 1}}">Next</a>-->
+<!--          <span th:unless="${currentPage < totalPages}">Next</span>-->
+<!--        </div>-->
+
+<!--        <div class="col-sm-1">-->
+<!--          <a th:if="${currentPage < totalPages}" th:href="@{'/all_schools/' + ${totalPages}}">Last</a>-->
+<!--          <span th:unless="${currentPage < totalPages}">Last</span>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--    </div>-->
+
+
+
+
+
 
     <!-- Bottom Section  -->
     <div class="bottom">
