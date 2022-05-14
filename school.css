@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Handlee&family=Source+Sans+Pro:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap");
+* {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  /* font-weight: 600; */
+}
+  
+  .container {
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  /* Header section  */
+  .nav-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #ffc107;
+    padding: 15px;
+  }
+  
+  a > img {
+    height: 60px;
+  }
+  
+  .search {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 12px;
+  }
+  
+  .search-logo > i {
+    margin-left: 10px;
+    color: grey;
+    cursor: pointer;
+  }
+  
+  .search-logo > i:hover {
+    color: #ffc107;
+  }
+  
+  .input-field > input {
+    margin-top: 10px;
+    margin-left: 7px;
+    outline: none;
+    border: none;
+    background: none;
+  }
+  
+  /* Middle section  */
+  .school {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .school-image {
+    align-self: center;
+    margin: 2em 2em;
+  }
+  
+  .school-image > img {
+    height: 500px;
+  }
+  
+  .school-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: grey;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding: 2em;
+    color: whitesmoke;
+    border: 3px solid #ffc107;
+    border-radius: 3em;
+  }
+
+  .row {
+    display: flex;
+    align-self: center;
+    /* margin-top: 1em; */
+  }
+
+  hr {
+    margin: 1em;
+  }
+
+  .topic {
+    font-weight: bolder;
+    margin-right: 4em;
+  }
+  
+  /* Footer section  */
+  .bottom {
+    display: flex;
+    margin-top: 20px;
+    background-color: #ffc107;
+    padding: 20px;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    margin-bottom: 10px;
+  }
+  
+  .logo_address,
+  .about_stuffs,
+  .items,
+  .admin,
+  .contact {
+    align-self: center;
+  }
+  
+  .address {
+    font-weight: 400;
+  }
+  
