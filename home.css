@@ -195,6 +195,7 @@ Middle Section
 
 .featured-image > img {
   max-width: 100%;
+  cursor: pointer;
 }
 
 .featured-school-name {
@@ -250,6 +251,7 @@ Middle Section
 
 .fe_image > img {
   height: 20em;
+  cursor: pointer;
 }
 
 /* featured school name  */
@@ -365,6 +367,7 @@ Middle Section
 
 .school-image > img {
   max-width: 100%;
+  cursor: pointer;
 }
 
 .school-name {
@@ -398,4 +401,26 @@ Bottom Section
 
 .address {
   font-weight: 400;
+}
+
+/* Mobile  */
+@media (max-width: 1100px) {
+  .searchAbout {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about {
+    margin-top: 1.5em;
+  }
+
+  .featured-schools {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .showcase_small_collection {
+    display: flex;
+    flex-direction: column;
+  }
 }

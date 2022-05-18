@@ -55,6 +55,7 @@
   .school {
     display: flex;
     flex-direction: column;
+    background-color: grey;
   }
   
   .school-image {
@@ -64,6 +65,7 @@
   
   .school-image > img {
     height: 500px;
+    border-radius: 2em;
   }
   
   .school-details {
@@ -73,6 +75,7 @@
     background-color: grey;
     margin-left: 3em;
     margin-right: 3em;
+    margin-bottom: 2em;
     padding: 2em;
     color: whitesmoke;
     border: 3px solid #ffc107;
@@ -97,7 +100,6 @@
   /* Footer section  */
   .bottom {
     display: flex;
-    margin-top: 20px;
     background-color: #ffc107;
     padding: 20px;
     justify-content: space-between;
